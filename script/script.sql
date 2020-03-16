@@ -24,6 +24,7 @@ CREATE TABLE user(
         firstname     Varchar (30) NOT NULL ,
         lastname      Varchar (30) NOT NULL ,
         email         Varchar (50) NOT NULL ,
+        password      Varchar (50) NOT NULL ,
         phone         Varchar (10) ,
         street_number Int NOT NULL ,
         street        Varchar (50) NOT NULL ,
