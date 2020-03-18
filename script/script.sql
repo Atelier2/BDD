@@ -44,7 +44,7 @@ CREATE TABLE series(
         id          Varchar (255) NOT NULL ,
         city        Varchar (60) NOT NULL ,
         map_refs    Varchar (60) NOT NULL ,
-        range       Int NOT NULL ,
+        distance    Int NOT NULL ,
         nb_pictures Int NOT NULL ,
         created_at  TimeStamp NOT NULL ,
         updated_at  TimeStamp NOT NULL ,
@@ -81,7 +81,7 @@ CREATE TABLE game(
         id        Varchar (50) NOT NULL ,
         token     Varchar (255) NOT NULL ,
         score     Int ,
-        pseudo    Varchar (20) NOT NULL ,
+        pseudo    Varchar (20) ,
         id_status Int NOT NULL ,
         id_series Varchar (255) NOT NULL
 	,CONSTRAINT game_PK PRIMARY KEY (id)
