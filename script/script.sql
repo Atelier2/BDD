@@ -43,11 +43,13 @@ CREATE TABLE user(
 CREATE TABLE series(
         id          Varchar (255) NOT NULL ,
         city        Varchar (60) NOT NULL ,
-        map_refs    Varchar (60) NOT NULL ,
         distance    Int NOT NULL ,
+        latitude    Varchar (15) NOT NULL ,
+        longitude   Varchar (50) NOT NULL ,
+        zoom        Int NOT NULL ,
         nb_pictures Int NOT NULL ,
         created_at  TimeStamp NOT NULL ,
-        updated_at  TimeStamp NOT NULL ,
+        updated_at  Varchar (15) NOT NULL ,
         id_user     Varchar (255) NOT NULL
 	,CONSTRAINT series_PK PRIMARY KEY (id)
 
@@ -62,7 +64,8 @@ CREATE TABLE series(
 CREATE TABLE picture(
         id          Varchar (255) NOT NULL ,
         description Varchar (300) NOT NULL ,
-        location    Varchar (255) NOT NULL ,
+        latitude    Varchar (15) NOT NULL ,
+        longitude   Varchar (50) NOT NULL ,
         link        Varchar (255) NOT NULL ,
         created_at  TimeStamp NOT NULL ,
         updated_at  TimeStamp NOT NULL ,
