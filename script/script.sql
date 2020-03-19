@@ -45,11 +45,11 @@ CREATE TABLE series(
         city        Varchar (60) NOT NULL ,
         distance    Int NOT NULL ,
         latitude    Varchar (15) NOT NULL ,
-        longitude   Varchar (50) NOT NULL ,
+        longitude   Varchar (15) NOT NULL ,
         zoom        Int NOT NULL ,
         nb_pictures Int NOT NULL ,
         created_at  TimeStamp NOT NULL ,
-        updated_at  Varchar (15) NOT NULL ,
+        updated_at  TimeStamp NOT NULL ,
         id_user     Varchar (255) NOT NULL
 	,CONSTRAINT series_PK PRIMARY KEY (id)
 
@@ -65,7 +65,7 @@ CREATE TABLE picture(
         id          Varchar (255) NOT NULL ,
         description Varchar (300) NOT NULL ,
         latitude    Varchar (15) NOT NULL ,
-        longitude   Varchar (50) NOT NULL ,
+        longitude   Varchar (15) NOT NULL ,
         link        Varchar (255) NOT NULL ,
         created_at  TimeStamp NOT NULL ,
         updated_at  TimeStamp NOT NULL ,
